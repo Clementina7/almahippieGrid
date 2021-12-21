@@ -1,11 +1,10 @@
-* {	font-family: "Fruktur", cursive;
-	src: url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap'); }
 
-body { background-image: url(../Imagenes/foto3.jpeg);}
+body { background-image: url(../Imagenes/foto3.jpeg);
+  font-family: 'Nunito', sans-serif; }
 
 nav ul li {background-image: linear-gradient(to top, lightsalmon, pink);}
 
-.hover {transition: 3s;}
+.hover {transition: 2s;}
 
 .hover:hover{width: 100px;}
 
@@ -37,6 +36,13 @@ height: 75px;}
     animation-iteration-count: 2s;
     animation-timing-function: ease-in;
    }   
+
+.formulario {text-align: center;}
+
+.campos {color: darkgreen;
+font-size: 20px;}
+
+}
 
 
 /* mediaquerie MOBILE */
@@ -168,25 +174,14 @@ height: 75px;}
     
     h2 {color: hotpink;}
 
-    .titulo {color: blue;
-	font-size: 20px;
-	font-weight: bold;}
+    .titulo {color: darkgreen;
+	font-size: 30px;}
 
-	h1 {color: brown;}
+	h1 {color: darkgreen;}
 
-	.info {color: blue;
-		font-size: 13px;
-		font-weight: bold;}
+}
 
-	.formulario { color: blue;
-	font-size: 13px; } 
-
-    
-
-	}
-
-
-
+	 
 /* mediaquerie TABLET */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -320,17 +315,15 @@ height: 75px;}
     
     h2 {color: hotpink;}
 
-    .titulo {color: blue;
-	font-size: 20px;
-	font-weight: bold;}
+    .titulo {color: darkgreen;
+	font-size: 20px;}
 
-	h1 {color: brown;}
+	h1 {color: darkgreen;}
 
-	.info {color: blue;
-		font-size: 15px;
-		font-weight: bold;}
+	.info {color: darkgreen;
+		font-size: 15px;}
 
-	.formulario { color: blue;
+	.formulario { color: darkgreen;
 	font-size: 15px; } 
 
 	iframe {width: 100%;}
@@ -473,13 +466,16 @@ height: 75px;}
     
     h2 {color: hotpink;}
 
-    h1 {color: brown;}
+    h1 {color: darkgreen;}
 
-	.info {color: blue;
+	.info {color: darkgreen;
 		font-size: 18px;}
 
-	.formulario { color: blue;
-	font-size: 18px; } 
+	.formulario {color: darkgreen;
+	font-size: 18px;} 
+
+	.titulo {color: darkgreen;
+	font-size: 20px;}
 
 	iframe {width: 100%;}
 
