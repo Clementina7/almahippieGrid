@@ -1,0 +1,489 @@
+* {	font-family: "Fruktur", cursive;
+	src: url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap'); }
+
+body { background-image: url(../Imagenes/foto3.jpeg);}
+
+nav ul li {background-image: linear-gradient(to top, lightsalmon, pink);}
+
+.hover {transition: 3s;}
+
+.hover:hover{width: 100px;}
+
+.hover1 {transition: 2s;}
+
+.hover1:hover{width: 85px;}
+
+.hover2 {transition: 2s;}
+
+.hover2:hover{width: 30px;}
+
+.logo {width: 75px;
+height: 75px;}
+
+@keyframes animacion { 
+
+    0%{width: 50%;}
+   20%{transform: rotate(360deg);}
+   40%{width: 50%;}
+   60%{transform: skew(10deg);}
+   80%{transform: scale(.5,.5);}
+  100%{width: 50%;} 
+  
+  }
+
+  .animacion {
+	animation-name: animacion;
+    animation-duration: 5s;
+    animation-iteration-count: 2s;
+    animation-timing-function: ease-in;
+   }   
+
+
+/* mediaquerie MOBILE */
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+	
+		.gridContenedorPadre {display: grid;
+		grid-template-areas: 
+		"logo"
+		"menu"
+		"main"
+		"footer";
+	    grid-template-columns: auto;
+		grid-template-rows: 105px 105px 500ppx 300px;
+		grid-row-gap: 20px;}
+
+		div {grid-area: logo;}
+
+		nav {grid-area: menu;}
+
+		main {grid-area: main;}
+
+		footer {grid-area: footer;}
+
+
+		.gridContenedorPadreWomen {display: grid;
+		grid-template-areas: 
+		"logo"
+		"menu"
+		"main"
+		"footer";
+	    grid-template-columns: auto;
+		grid-template-rows: 105px 105px 500ppx 300px;
+		grid-row-gap: 20px;}
+
+		div {grid-area: logo;}
+
+		nav {grid-area: menu;}
+
+		main {grid-area: main;}
+
+		footer {grid-area: footer;}
+
+
+        .gridContenedorPadreDeco {display: grid;
+		grid-template-areas: 
+		"logo"
+		"menu"
+		"main"
+		"footer";
+	    grid-template-columns: auto;
+		grid-template-rows: 105px 105px 500ppx 300px;
+		grid-row-gap: 20px;}
+
+		div {grid-area: logo;}
+
+		nav {grid-area: menu;}
+
+		main {grid-area: main;}
+
+		footer {grid-area: footer;}
+
+
+        .gridContenedorPadreNosotros {display: grid;
+		grid-template-areas: 
+		"logo"
+		"menu"
+		"textoIzq"
+		"textoDer"
+		"footer";
+	    grid-template-columns: auto;
+		grid-template-rows: 105px 105px 500ppx 500px 300px;
+		grid-row-gap: 20px;}
+
+		div {grid-area: logo;}
+
+		nav {grid-area: menu;}
+
+		.textoIzq {grid-area: textoIzq;}
+
+		.textoDer {grid-area: textoDer;}
+
+		footer {grid-area: footer;}
+
+
+		.gridContenedorPadreContacto {display: grid;
+		grid-template-areas: 
+		"logo"
+		"menu"
+		"ubicacion"
+		"formulario"
+		"footer";
+	    grid-template-columns: auto;
+		grid-template-rows: 105px 105px 500ppx 500px 300px;
+		grid-row-gap: 20px;}
+
+		div {grid-area: logo;}
+
+		nav {grid-area: menu;}
+
+		.mapa {grid-area: ubicacion;}
+
+		.formulario {grid-area: formulario;}
+
+		footer {grid-area: footer;}
+
+    
+    ul li { list-style-type: none;
+	padding: 5px; 
+	display: inline-flex;}
+
+	a {font-size: 12px;
+		text-decoration: none;
+	color: darkred;}
+
+	div {text-align: center;}
+
+	footer {text-align: center;}
+
+	.menu {text-align: center;}
+
+	.camilo {width: 100%;}
+
+	.imagen {width: 100%;}	
+
+	.texto {color: red;
+		font-size: 13px;
+		text-decoration: none;}
+    
+    h2 {color: hotpink;}
+
+    .titulo {color: blue;
+	font-size: 20px;
+	font-weight: bold;}
+
+	h1 {color: brown;}
+
+	.info {color: blue;
+		font-size: 13px;
+		font-weight: bold;}
+
+	.formulario { color: blue;
+	font-size: 13px; } 
+
+    
+
+	}
+
+
+
+/* mediaquerie TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+		.gridContenedorPadre {display: grid;
+			grid-template-areas: 
+			"logo menu"
+			"main main"
+		    "footer footer";
+		    grid-template-columns: repeat(2, 50%);
+			grid-template-rows: 105px 500ppx 300px;
+			grid-row-gap: 20px;
+		}
+
+		div {grid-area: logo;}
+
+		nav {grid-area: menu;}
+
+		main {grid-area: main;}
+
+		footer {grid-area: footer;}
+
+				
+		.gridContenedorPadreWomen {display: grid;
+			grid-template-areas: 
+			"logo menu"
+			"main main"
+		    "footer footer";
+		    grid-template-columns: repeat(2, 50%);
+			grid-template-rows: 105px 500ppx 300px;
+			grid-row-gap: 20px;
+		}
+
+		div {grid-area: logo;}
+
+		nav {grid-area: menu;}
+
+		main {grid-area: main;}
+
+		footer {grid-area: footer;}
+
+
+		.gridContenedorPadreDeco {display: grid;
+			grid-template-areas: 
+			"logo menu"
+			"main main"
+		    "footer footer";
+		    grid-template-columns: repeat(2, 50%);
+			grid-template-rows: 105px 500ppx 300px;
+			grid-row-gap: 20px;
+		}
+
+		div {grid-area: logo;}
+
+		nav {grid-area: menu;}
+
+		main {grid-area: main;}
+
+		footer {grid-area: footer;}
+
+
+        .gridContenedorPadreNosotros {display: grid;
+			grid-template-areas: 
+			"logo menu"
+			"textoIzq textoDer"
+		    "footer footer";
+		    grid-template-columns: repeat(2, 50%);
+			grid-template-rows: 105px 500ppx 300px;
+			grid-row-gap: 20px;
+		}
+
+		div {grid-area: logo;}
+
+		nav {grid-area: menu;}
+
+		.textoIzq {grid-area: textoIzq;}
+
+		.textoDer {grid-area: textoDer;}
+
+		footer {grid-area: footer;}
+	
+
+        .gridContenedorPadreContacto {display: grid;
+			grid-template-areas: 
+			"logo menu"
+			"mapa formulario"
+		    "footer footer";
+		    grid-template-columns: repeat(2, 50%);
+			grid-template-rows: 105px 500ppx 300px;
+			grid-row-gap: 20px;
+			grid-column-gap: 20px;
+		}
+
+		div {grid-area: logo;}
+
+		nav {grid-area: menu;}
+
+		.mapa {grid-area: mapa;}
+
+		.formulario {grid-area: formulario;}
+
+		footer {grid-area: footer;}
+	
+
+
+	ul li { list-style-type: none;
+	padding: 5px; 
+	display: inline-flex;}
+
+	a {font-size: 15px;
+		text-decoration: none;
+	color: darkred;	}
+    
+    nav {margin-top: 50px;
+    	transform: translate(-40px);}
+
+    footer {text-align: center;}
+
+	.menu {text-align: center;}
+
+	.camilo {width: 100%;}
+
+	.imagen {width: 100%;}
+
+	.texto {color: red;
+		font-size: 15px;
+		text-decoration: none;
+		text-align: justify-all;
+		margin: 5px;}
+    
+    h2 {color: hotpink;}
+
+    .titulo {color: blue;
+	font-size: 20px;
+	font-weight: bold;}
+
+	h1 {color: brown;}
+
+	.info {color: blue;
+		font-size: 15px;
+		font-weight: bold;}
+
+	.formulario { color: blue;
+	font-size: 15px; } 
+
+	iframe {width: 100%;}
+
+
+    }
+
+
+/* mediaquerie DESKTOP */
+
+@media only screen and (min-width: 1024px) {
+
+
+	    .gridContenedorPadre {display: grid;
+			grid-template-areas: 
+			"logo menu menu"
+			"main main main"
+		    "footer footer footer";
+		    grid-template-columns: repeat(3, 33%);
+			grid-template-rows: 105px 500ppx 300px;
+			grid-row-gap: 20px;
+		}
+
+		div {grid-area: logo;}
+
+		nav {grid-area: menu;}
+
+		main {grid-area: main;}
+
+		footer {grid-area: footer;}
+
+		
+		.gridContenedorPadreWomen {display: grid;
+			grid-template-areas: 
+			"logo menu menu"
+			"main main main"
+		    "footer footer footer";
+		    grid-template-columns: repeat(3, 33%);
+			grid-template-rows: 105px 500ppx 300px;
+			grid-row-gap: 20px;
+		}
+
+		div {grid-area: logo;}
+
+		nav {grid-area: menu;}
+
+		main {grid-area: main;}
+
+		footer {grid-area: footer;}
+
+
+		.gridContenedorPadreDeco {display: grid;
+			grid-template-areas: 
+			"logo menu menu"
+			"main main main"
+		    "footer footer footer";
+		    grid-template-columns: repeat(3, 33%);
+			grid-template-rows: 105px 500ppx 300px;
+			grid-row-gap: 20px;
+		}
+
+		div {grid-area: logo;}
+
+		nav {grid-area: menu;}
+
+		main {grid-area: main;}
+
+		footer {grid-area: footer;}
+
+
+		.gridContenedorPadreNosotros {display: grid;
+			grid-template-areas: 
+			"logo menu menu"
+			"textoIzq textoIzq textoIzq"
+			"textoDer textoDer textoDer"
+		    "footer footer footer";
+		    grid-template-columns: repeat(3, 33%);
+			grid-template-rows: 105px 500px 500ppx 300px;
+			grid-row-gap: 20px;
+		}
+
+		div {grid-area: logo;}
+
+		nav {grid-area: menu;}
+
+		.textoIzq {grid-area: textoIzq;}
+
+		.textoDer {grid-area: textoDer;}
+
+		footer {grid-area: footer;}
+
+	
+        .gridContenedorPadreContacto {display: grid;
+			grid-template-areas: 
+			"logo menu menu"
+			"mapa mapa mapa"
+			"formulario formulario formulario"
+		    "footer footer footer";
+		    grid-template-columns: repeat(3, 33%);
+			grid-template-rows: 105px 500px 500ppx 300px;
+			grid-row-gap: 20px;
+		}
+
+		div {grid-area: logo;}
+
+		nav {grid-area: menu;}
+
+		.mapa {grid-area: mapa;}
+
+		.formulario {grid-area: formulario;}
+
+		footer {grid-area: footer;}
+
+
+
+	ul li { list-style-type: none;
+	padding: 5px; 
+	display: inline-flex;}
+
+	a {font-size: 20px;
+		text-decoration: none;
+	color: darkred;	}
+    
+    nav {margin-top: 50px;}
+
+    footer {text-align: center;}
+
+	.menu {text-align: center;
+	justify-items: baseline;}
+
+	.camilo {width: 100%;}
+
+	.imagen {width: 100%;}	
+
+	.texto {color: red;
+		font-size: 18px;
+		text-decoration: none;
+		text-align: justify-all;
+		margin: 5px;}
+    
+    h2 {color: hotpink;}
+
+    h1 {color: brown;}
+
+	.info {color: blue;
+		font-size: 18px;}
+
+	.formulario { color: blue;
+	font-size: 18px; } 
+
+	iframe {width: 100%;}
+
+    
+    }
+
+
