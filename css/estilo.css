@@ -149,8 +149,9 @@ font-size: 20px;}
 
 		footer {grid-area: footer;}
 
-    
-    ul li { list-style-type: none;
+  }
+
+  ul li{list-style-type: none;
 	padding: 5px; 
 	display: inline-flex;}
 
@@ -172,9 +173,9 @@ font-size: 20px;}
 		font-size: 13px;
 		text-decoration: none;}
     
-    h2 {color: hotpink;}
+  h2 {color: hotpink;}
 
-    .titulo {color: darkgreen;
+  .titulo {color: darkgreen;
 	font-size: 30px;}
 
 	h1 {color: darkgreen;}
