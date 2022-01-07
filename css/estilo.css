@@ -1,5 +1,5 @@
 
-body { background-image: url(../imagenes/foto3.jpeg);
+body { background-image: url("../imagenes/foto3.jpeg");
   font-family: 'Nunito', sans-serif; }
 
 nav ul li {background-image: linear-gradient(to top, lightsalmon, pink);}
